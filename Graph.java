@@ -63,27 +63,27 @@ public class Graph {
 	 carry out a breadth first search/traversal of the graph
 	 psedocode version
 	 */
-	public void bfs() {
-		assign each vertex to be unvisited;
-  		set up an initially empty queue of  
-         		visited but unprocessed vertices;
-  		for each vertex v {
-    		if v is not visited {
-      			assign v to be visited;
-      			assign the predecessor of v;
-      			add v to the queue;
-      			while the queue is not empty {
-        			remove vertex u from the queue;
-        			for each vertex w in the adjacency list of u {
-        				if w is unvisited {
-           					assign w to be visited;
-           					assign the predecessor of w;
-           					add w to the queue;
-         				} 
-       				}
-       			}
-    		}
-    	}
-	}
+//	public void bfs() {
+//		assign each vertex to be unvisited;
+//  		set up an initially empty queue of
+//         		visited but unprocessed vertices;
+//  		for each vertex v {
+//    		if v is not visited {
+//      			assign v to be visited;
+//      			assign the predecessor of v;
+//      			add v to the queue;
+//      			while the queue is not empty {
+//        			remove vertex u from the queue;
+//        			for each vertex w in the adjacency list of u {
+//        				if w is unvisited {
+//           					assign w to be visited;
+//           					assign the predecessor of w;
+//           					add w to the queue;
+//         				}
+//       				}
+//       			}
+//    		}
+//    	}
+//	}
 
 }
