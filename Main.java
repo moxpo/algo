@@ -27,26 +27,35 @@ public class Main {
 		for (int i = 0; i <= numVertices - 1; i++){
 			String row = in.nextLine();
 			String[] elements = row.trim().split(" ");
-			System.out.println(Arrays.toString(elements));
-			System.out.println("\n");
+			AdjListNode adjListNode = new AdjListNode(i);
 			for (int c = 0; c <= elements.length - 1; c ++){
-//				System.out.println(c + "  " + elements[c]);
-				if (c == 1){
-					graph.setVertex(c+1);
+				if(elements[c].equals("1")) {
+					graph.getVertex(i).addToAdjList(c);
+
+
+
+
+
 				}
 
 			}
 
-
-
-
-
-
-
+			graph.getVertex(i).setVisited(true);
 
 
 
 		}
+
+		graph.dfs();
+
+
+
+
+
+
+
+
+
 
 
 
