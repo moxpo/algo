@@ -28,12 +28,15 @@ public class Main {
 			String row = in.nextLine();
 			String[] elements = row.trim().split(" ");
 			System.out.println(Arrays.toString(elements));
+			System.out.println("\n");
 			for (int c = 0; c <= elements.length - 1; c ++){
-				System.out.println(c + "  " + elements[c]);
+//				System.out.println(c + "  " + elements[c]);
+				if (c == 1){
+					graph.setVertex(c+1);
+				}
 
 			}
 
-			// git test
 
 
 
