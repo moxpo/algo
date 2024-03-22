@@ -63,6 +63,23 @@ public class Graph {
 	 carry out a breadth first search/traversal of the graph
 	 psedocode version
 	 */
+
+	public void bfs(){
+
+		for (Vertex v : vertices) { v.setVisited(false);
+			LinkedList<Vertex> queue = new LinkedList<Vertex>();
+			}
+
+		for (Vertex v : vertices) {
+			if (!v.getVisited()){
+				v.setVisited(true);
+				v.setPredecessor(v.getIndex());
+			}
+		}
+
+
+
+
 //	public void bfs() {
 //		assign each vertex to be unvisited;
 //  		set up an initially empty queue of
